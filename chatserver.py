@@ -54,6 +54,7 @@ class Thread(threading.Thread):
         reply = pickle.loads(marshaled_reply)
         if reply != "ACK":
             print("Error: Destination client did not receive message properly")
+            break
         else:
             print("Server: Received Ack from client")
             return
