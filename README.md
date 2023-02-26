@@ -8,6 +8,6 @@ Overall architecture of this first version of the app (discussed in classroom):
 
 # Changes:
 Changed server-side functions in Thread class from threading module
-overrided Thread.__init__ and Thread.run() in Thread class and moved server functions from while loop into class Thread method run.
+overrided Thread.__init__() and Thread.run() in Thread class and moved server functions from while loop into class Thread method run.
 changed prints in server and client scripts from comments to functions.
 
