@@ -16,6 +16,7 @@ class RecvHandler(threading.Thread):
         print('Server connected to me.')
         marshaled_msg_pack = conn.recv(1024)   # receive data from server
         msg_pack = pickle.loads(marshaled_msg_pack) # unmarshal message pack
+        print("\n")
         print("MESSAGE: " + msg_pack[0] + " - FROM: " + msg_pack[1])
         conn.send(pickle.dumps("ACK")) # simply send the server an Ack to confirm
         conn.close()
@@ -57,3 +58,4 @@ while True:
         print("Received Ack from server")
         pass
     server_sock.close()
+    break
