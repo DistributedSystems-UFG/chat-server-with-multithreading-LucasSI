@@ -10,7 +10,7 @@ server_sock.listen(5) # may change if too many clients
 print("Chat Server is ready...")
 
 class Thread(threading.Thread):
-    # Defines class Thread constructor
+    # Override in class Thread methods init and run
     # Defines socket
     def __init__(self, conn):
         threading.Thread.__init__(self)
