@@ -5,3 +5,9 @@ The app has a very simple client-server architecture. Students can identify limi
 Overall architecture of this first version of the app (discussed in classroom):
 
 ![Chat Design - client-server](https://user-images.githubusercontent.com/13460193/173588387-89793ac9-17b9-4441-986b-53cac6ee40f4.png)
+
+# Changes:
+Changed server-side functions in Thread class from threading module
+overrided Thread.__init__ and Thread.run() in Thread class and moved server functions from while loop into class Thread method run.
+changed prints in server and client scripts from comments to functions.
+
